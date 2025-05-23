@@ -61,7 +61,7 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "rofi", "-show", "drun"};
-static const char *termcmd[]  = { "alacritty"};
+static const char *termcmd[]  = { "st"};
 static const char *volupcmd[] = {"wpctl", "set-volume", "@DEFAULT_SINK@", "5%+"};
 static const char *voldowncmd[] = {"wpctl", "set-volume", "@DEFAULT_SINK@", "5%-"};
 static const char *volmutecmd[] = {"wpctl", "set-mute", "@DEFAULT_SINK@", "toggle"};
