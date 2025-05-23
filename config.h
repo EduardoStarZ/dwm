@@ -65,6 +65,9 @@ static const char *termcmd[]  = { "st"};
 static const char *volupcmd[] = {"wpctl", "set-volume", "@DEFAULT_SINK@", "5%+"};
 static const char *voldowncmd[] = {"wpctl", "set-volume", "@DEFAULT_SINK@", "5%-"};
 static const char *volmutecmd[] = {"wpctl", "set-mute", "@DEFAULT_SINK@", "toggle"};
+static const char *printselectcmd[] = {"printselect"};
+static const char *printcmd[] = {"printnosel"};
+
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_space,  spawn,          {.v = dmenucmd } },
@@ -95,6 +98,8 @@ static const Key keys[] = {
 	{ 0,							XF86XK_AudioRaiseVolume, spawn, {.v = volupcmd} },
 	{ 0,							XF86XK_AudioLowerVolume, spawn, {.v = voldowncmd} },
 	{ 0,							XF86XK_AudioMute, spawn,   {.v = volmutecmd} },
+	{ 0,							XK_Print,	spawn,		   {.v = printselectcmd} },
+	{ MODKEY,						XK_Print,	spawn,		   {.v = printcmd} },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
