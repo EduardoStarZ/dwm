@@ -1,5 +1,9 @@
 /* See LICENSE file for copyright and license details. */
 
+/*
+ * Patches Applied: rotatestack, status diff, status2d
+ * *}
+
 #include <X11/XF86keysym.h>
 
 /* appearance */
