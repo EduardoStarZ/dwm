@@ -1,8 +1,8 @@
 /* See LICENSE file for copyright and license details. */
 
 /*
- * Patches Applied: rotatestack, status diff, status2d
- * *}
+ * Patches Applied: rotatestack, status diff, status2d, alpha_fixborders
+ */
 
 #include <X11/XF86keysym.h>
 
