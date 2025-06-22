@@ -40,6 +40,7 @@ static const Rule rules[] = {
 	{ "zen",	  NULL,       NULL,		  1 << 2,       0,           -1 },
 	{ "discord",  NULL,		  NULL,       1 << 9,		0,			 -1 },
 	{ "steam",	  NULL,		  NULL,		  1 << 10,		0,			 -1 },
+	{ "steam_game", NULL,	  NULL,		  0,			0,			 -1 },
 };
 
 /* layout(s) */
